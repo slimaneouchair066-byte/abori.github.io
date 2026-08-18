@@ -1,0 +1,166 @@
+<!-- privacy.html - صفحة سياسة الخصوصية -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سياسة الخصوصية | طقس العالم</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+        /* نفس التنسيقات المستخدمة في الصفحات الأخرى */
+        .page-header { text-align: center; padding: 30px 0 10px; }
+        .page-header h1 { font-size: 2.2rem; margin-bottom: 6px; }
+        .page-header p { color: #b6d4e0; font-size: 1.05rem; }
+        .page-content {
+            background: rgba(10, 30, 45, 0.35);
+            backdrop-filter: blur(8px);
+            border-radius: 32px;
+            padding: 30px 28px;
+            border: 1px solid rgba(255, 215, 150, 0.1);
+            margin: 20px 0 30px;
+            line-height: 1.9;
+        }
+        .page-content h2 {
+            color: #f5d7a0;
+            margin: 25px 0 12px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .page-content h2 i { color: #f5b342; }
+        .page-content p { margin-bottom: 14px; opacity: 0.92; }
+        .page-content ul {
+            list-style: none;
+            padding-right: 10px;
+        }
+        .page-content ul li {
+            padding: 8px 0 8px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .page-content ul li i { color: #f5b342; width: 24px; text-align: center; }
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(245, 179, 66, 0.15);
+            border: 1px solid rgba(245, 179, 66, 0.3);
+            border-radius: 60px;
+            padding: 10px 28px;
+            color: #f5d7a0;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            margin-top: 15px;
+        }
+        .back-home:hover {
+            background: rgba(245, 179, 66, 0.25);
+            transform: translateY(-2px);
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        .footer-links a {
+            color: #b6d4e0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .footer-links a:hover { color: #f5b342; }
+        .footer-links a.active { color: #f5b342; font-weight: 600; }
+        @media (max-width: 600px) {
+            .page-content { padding: 20px 16px; }
+            .page-header h1 { font-size: 1.7rem; }
+        }
+        .privacy-badge {
+            background: rgba(245, 179, 66, 0.08);
+            border-radius: 30px;
+            padding: 6px 18px;
+            display: inline-block;
+            font-size: 0.8rem;
+            border: 1px solid rgba(245, 179, 66, 0.15);
+            color: #f5d7a0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- رأس الصفحة -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <a href="index.html" style="color: #f5b342; font-size: 1.4rem; font-weight: 700; text-decoration: none;">
+                <i class="fas fa-cloud-sun"></i> طقس العالم
+            </a>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a href="about.html" class="footer-links-link" style="color: #b6d4e0; text-decoration: none; padding: 6px 14px; border-radius: 30px; transition:0.3s; font-size:0.9rem;">من نحن</a>
+                <a href="contact.html" class="footer-links-link" style="color: #b6d4e0; text-decoration: none; padding: 6px 14px; border-radius: 30px; transition:0.3s; font-size:0.9rem;">اتصل بنا</a>
+                <a href="privacy.html" class="footer-links-link active" style="color: #f5b342; text-decoration: none; padding: 6px 14px; border-radius: 30px; background: rgba(245,179,66,0.12); font-size:0.9rem;">سياسة الخصوصية</a>
+            </div>
+        </div>
+
+        <!-- محتوى الصفحة -->
+        <div class="page-header">
+            <h1><i class="fas fa-shield-alt" style="color: #f5b342; margin-left: 12px;"></i>سياسة الخصوصية</h1>
+            <p>نحن نحمي بياناتك ونلتزم بالشفافية التامة</p>
+        </div>
+
+        <div class="page-content">
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px;">
+                <span class="privacy-badge"><i class="fas fa-check-circle"></i> محدث: 18 أغسطس 2026</span>
+                <span class="privacy-badge"><i class="fas fa-globe"></i> يسري على جميع المستخدمين</span>
+            </div>
+
+            <h2><i class="fas fa-info-circle"></i> مقدمة</h2>
+            <p>نحن في <strong>طقس العالم</strong> نولي خصوصية بياناتك أهمية قصوى. توضح هذه السياسة كيفية جمع واستخدام وحماية المعلومات التي تشاركها معنا عند استخدامك لموقعنا وتطبيقاتنا.</p>
+
+            <h2><i class="fas fa-database"></i> ما هي البيانات التي نجمعها؟</h2>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> <strong>الموقع الجغرافي (GPS):</strong> نستخدم موقعك لتقديم توقعات دقيقة للمنطقة التي تتواجد فيها. لا يتم تخزين هذه البيانات بشكل دائم.</li>
+                <li><i class="fas fa-comment"></i> <strong>التعليقات والصور المرفوعة:</strong> أي تعليق أو صورة تشاركها تُخزن في قاعدة بياناتنا لعرضها للمستخدمين الآخرين.</li>
+                <li><i class="fas fa-chart-line"></i> <strong>بيانات الاستخدام:</strong> نستخدم ملفات تعريف الارتباط (Cookies) لفهم كيفية تفاعلك مع الموقع وتحسين تجربتك.</li>
+            </ul>
+
+            <h2><i class="fas fa-lock"></i> كيف نحمي بياناتك؟</h2>
+            <p>نستخدم أحدث تقنيات التشفير (SSL/TLS) لحماية جميع البيانات المنقولة بين متصفحك وخوادمنا. يتم تخزين البيانات في خوادم آمنة مع جدران حماية متقدمة، ولا يتم مشاركة معلوماتك الشخصية مع أطراف ثالثة دون موافقتك الصريحة.</p>
+
+            <h2><i class="fas fa-user-check"></i> حقوقك</h2>
+            <ul>
+                <li><i class="fas fa-eye"></i> يمكنك طلب نسخة من جميع البيانات المخزنة عنك في أي وقت.</li>
+                <li><i class="fas fa-trash-alt"></i> يمكنك طلب حذف بياناتك بشكل نهائي من سجلاتنا.</li>
+                <li><i class="fas fa-toggle-on"></i> يمكنك تعطيل مشاركة الموقع (GPS) من إعدادات متصفحك في أي وقت.</li>
+            </ul>
+
+            <h2><i class="fas fa-children"></i> خصوصية الأطفال</h2>
+            <p>لا نقوم بجمع بيانات عن قصد من الأطفال دون سن 13 عاماً. إذا كنت ولي أمر وتعتقد أن طفلك شارك بياناته معنا، يرجى التواصل معنا وسنقوم بحذفها فوراً.</p>
+
+            <h2><i class="fas fa-envelope"></i> التواصل معنا</h2>
+            <p>لأي استفسار حول هذه السياسة أو لحذف بياناتك، يمكنك مراسلتنا على: <strong>privacy@weather-world.com</strong></p>
+
+            <a href="index.html" class="back-home"><i class="fas fa-arrow-right"></i> العودة للرئيسية</a>
+        </div>
+
+        <!-- روابط التذييل -->
+        <div class="footer-links">
+            <a href="about.html"><i class="fas fa-info-circle"></i> من نحن</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> اتصل بنا</a>
+            <a href="privacy.html" class="active"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a>
+            <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+        </div>
+        
+        <div class="footer-note">© 2026 طقس العالم – جميع الحقوق محفوظة</div>
+    </div>
+</body>
+</html>
