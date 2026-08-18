@@ -1,0 +1,196 @@
+<!-- about.html - صفحة من نحن -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>من نحن | طقس العالم</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+        /* نفس التنسيقات المستخدمة في contact.html */
+        .page-header { text-align: center; padding: 30px 0 10px; }
+        .page-header h1 { font-size: 2.2rem; margin-bottom: 6px; }
+        .page-header p { color: #b6d4e0; font-size: 1.05rem; }
+        .page-content {
+            background: rgba(10, 30, 45, 0.35);
+            backdrop-filter: blur(8px);
+            border-radius: 32px;
+            padding: 30px 28px;
+            border: 1px solid rgba(255, 215, 150, 0.1);
+            margin: 20px 0 30px;
+            line-height: 1.9;
+        }
+        .page-content h2 {
+            color: #f5d7a0;
+            margin: 25px 0 12px;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .page-content h2 i { color: #f5b342; }
+        .page-content p { margin-bottom: 14px; opacity: 0.92; }
+        .page-content ul {
+            list-style: none;
+            padding-right: 10px;
+        }
+        .page-content ul li {
+            padding: 8px 0 8px 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .page-content ul li i { color: #f5b342; width: 24px; text-align: center; }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .team-card {
+            background: rgba(0,0,0,0.2);
+            border-radius: 24px;
+            padding: 20px 14px;
+            text-align: center;
+            border: 1px solid rgba(255,215,150,0.08);
+            transition: 0.3s;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(245,179,66,0.3);
+        }
+        .team-card .avatar {
+            font-size: 3rem;
+            color: #f5b342;
+            margin-bottom: 8px;
+        }
+        .team-card .name {
+            font-weight: 700;
+            color: #f5d7a0;
+        }
+        .team-card .role {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+        .back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(245, 179, 66, 0.15);
+            border: 1px solid rgba(245, 179, 66, 0.3);
+            border-radius: 60px;
+            padding: 10px 28px;
+            color: #f5d7a0;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            margin-top: 15px;
+        }
+        .back-home:hover {
+            background: rgba(245, 179, 66, 0.25);
+            transform: translateY(-2px);
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        .footer-links a {
+            color: #b6d4e0;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .footer-links a:hover { color: #f5b342; }
+        .footer-links a.active { color: #f5b342; font-weight: 600; }
+        @media (max-width: 600px) {
+            .page-content { padding: 20px 16px; }
+            .page-header h1 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- رأس الصفحة -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+            <a href="index.html" style="color: #f5b342; font-size: 1.4rem; font-weight: 700; text-decoration: none;">
+                <i class="fas fa-cloud-sun"></i> طقس العالم
+            </a>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <a href="about.html" class="footer-links-link active" style="color: #f5b342; text-decoration: none; padding: 6px 14px; border-radius: 30px; background: rgba(245,179,66,0.12); font-size:0.9rem;">من نحن</a>
+                <a href="contact.html" class="footer-links-link" style="color: #b6d4e0; text-decoration: none; padding: 6px 14px; border-radius: 30px; transition:0.3s; font-size:0.9rem;">اتصل بنا</a>
+                <a href="privacy.html" class="footer-links-link" style="color: #b6d4e0; text-decoration: none; padding: 6px 14px; border-radius: 30px; transition:0.3s; font-size:0.9rem;">سياسة الخصوصية</a>
+            </div>
+        </div>
+
+        <!-- محتوى الصفحة -->
+        <div class="page-header">
+            <h1><i class="fas fa-users" style="color: #f5b342; margin-left: 12px;"></i>من نحن</h1>
+            <p>فريق متخصص في تقديم توقعات طقس دقيقة وموثوقة حول العالم</p>
+        </div>
+
+        <div class="page-content">
+            <h2><i class="fas fa-bullseye"></i> رسالتنا</h2>
+            <p>نسعى لتوفير توقعات جوية دقيقة ومفيدة للمستخدمين في كل مكان، باستخدام أحدث تقنيات الذكاء الاصطناعي وتحليل البيانات من مصادر عالمية موثوقة، لنساعدك في التخطيط ليومك بأمان وثقة.</p>
+
+            <h2><i class="fas fa-history"></i> قصتنا</h2>
+            <p>انطلقنا في عام 2024 من الدار البيضاء، المغرب، بطموح لتغيير طريقة متابعة الطقس. جمعنا خبراء في الأرصاد الجوية ومطوري برمجيات لبناء منصة تجمع بين الدقة العلمية وسهولة الاستخدام. اليوم، نخدم آلاف المستخدمين في أكثر من 50 دولة.</p>
+
+            <h2><i class="fas fa-rocket"></i> ماذا نقدم؟</h2>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> توقعات جوية لمدة 10 أيام بدقة عالية</li>
+                <li><i class="fas fa-check-circle"></i> تحليل لحالة البحر، الزلازل، والبراكين</li>
+                <li><i class="fas fa-check-circle"></i> نظام GPS لتحديد موقعك وعرض الطقس المحلي</li>
+                <li><i class="fas fa-check-circle"></i> محتوى محلي (صور، أخبار، تعليقات من المستخدمين)</li>
+                <li><i class="fas fa-check-circle"></i> مدعوم بالذكاء الاصطناعي لتحليل دقيق</li>
+            </ul>
+
+            <h2><i class="fas fa-user-tie"></i> فريقنا</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="avatar"><i class="fas fa-user-circle"></i></div>
+                    <div class="name">أحمد المنصوري</div>
+                    <div class="role">مؤسس &amp; خبير أرصاد</div>
+                </div>
+                <div class="team-card">
+                    <div class="avatar"><i class="fas fa-user-circle"></i></div>
+                    <div class="name">سارة بناني</div>
+                    <div class="role">مديرة التطوير التقني</div>
+                </div>
+                <div class="team-card">
+                    <div class="avatar"><i class="fas fa-user-circle"></i></div>
+                    <div class="name">يوسف العلوي</div>
+                    <div class="role">مهندس بيانات &amp; AI</div>
+                </div>
+                <div class="team-card">
+                    <div class="avatar"><i class="fas fa-user-circle"></i></div>
+                    <div class="name">نادية الفاسي</div>
+                    <div class="role">مصممة واجهات</div>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-home"><i class="fas fa-arrow-right"></i> العودة للرئيسية</a>
+        </div>
+
+        <!-- روابط التذييل -->
+        <div class="footer-links">
+            <a href="about.html" class="active"><i class="fas fa-info-circle"></i> من نحن</a>
+            <a href="contact.html"><i class="fas fa-phone"></i> اتصل بنا</a>
+            <a href="privacy.html"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a>
+            <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+        </div>
+        
+        <div class="footer-note">© 2026 طقس العالم – جميع الحقوق محفوظة</div>
+    </div>
+</body>
+</html>
